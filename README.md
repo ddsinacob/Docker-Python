@@ -63,7 +63,8 @@ Prepare the CGI script
 
 Create and Run a Docker Container to serve CGI Script
 -----------------------------------------------------
-    Placingt the python script under apache2 default CGI folder . Exposing container port 80 to 80 in compute instance and added a firewall ingress rule in GCP. I am also mounting local directory cgi-bin which contins python script to /usr/lib/cgi-bin in docker container.
+
+Placing the python script under apache2 default CGI folder . Exposing container port 80 to 80 in compute instance and added a firewall ingress rule in GCP. I am also mounting local directory cgi-bin which contins python script to /usr/lib/cgi-bin in docker container.
     
 
     
@@ -77,7 +78,5 @@ Create and Run a Docker Container to serve CGI Script
         
 Test the CGI script
 -------------------
-
-
   
       http://XX.XXX.XXX.XX/cgi-bin/myapp?url=https://api.nasa.gov/EPIC/api/natural/date/2015-10-31
